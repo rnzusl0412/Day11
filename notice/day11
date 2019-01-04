@@ -1,0 +1,32 @@
+1. class = 속성(값) + 메소드(기능)
+	:멤버변수를 은닉화, 오픈된 메소드가 값 전달 및 변경
+	:모든 멤버를 식별할 수 있다면 접근제한자를 지정한다.
+	public class user_Name{
+		Nested	: 클래스를 속성으로 선언  
+		Field	: 상수  public static final
+		Constr	: 생성자_멤버변수 초기화 this(), super()
+		Method	: 기능을 수행하는 단위
+	}
+
+2. 상속 : 클래스 간의 상속  extends	= 단일 상속을 원칙으로 한다.
+	  : protected = 상속시에 같은 패키지, 다른 패키지 안에서 접근을 public으로 제한한다.
+	  
+추상 : abstract 라는 키워드를 클래스, 메소드 앞에 선언한다. 
+
+public abstract class user_Name{} : 추상클래스 
+	1. 추상클래스는 객체 생성 불가능  new user_Name(); X 
+	2. 후손클래스가 추상메소드를 재정의하지 않으면 후손클래스가 추상클래스가 된다. 
+	3. 추상메소드는 선택적으로 선언하게 된다. 
+	
+public abstract void user_Name(); -> 추상메소드 
+	1. 추상메소드는 기능구현이 없는 선언 메소드이다.
+	2. 후손이 반드시 재정의 하는 메소드이다.
+	
+=======================================================================================
+	
+interface - 완벽한 추상화 - 메뉴 [상수값, 추상메소드]
+
+public interface User_Name{
+	상수 : public static final ...
+	추상 메소드 : public abstract ...
+}
